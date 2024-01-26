@@ -8,9 +8,72 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var fName: UITextField!
+    @IBOutlet weak var lName: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var invisibleLabel: UILabel!
+    @IBOutlet weak var resultField: UITextView!
+    
+    
+    @IBAction func fName(_ sender: UITextField) {
+    }
+    
+    @IBAction func lName(_ sender: UITextField) {
+    }
+    
+    @IBAction func country(_ sender: UITextField) {
+    }
+    
+    @IBAction func age(_ sender: UITextField) {
+    }
+    
+    @IBAction func addBtn(_ sender: UIButton) {
+        if(fName.text == nil || fName.text!.isEmpty || lName.text == nil || lName.text!.isEmpty || country.text == nil || country.text!.isEmpty || age.text == nil || age.text!.isEmpty){
+            
+                    invisibleLabel.isHidden = false
+                    invisibleLabel.textColor = UIColor.red
+                    invisibleLabel.text = "Please enter information first!"
+                }
+        else{
+                    displayData()
+                }
+    }
+    
+    
+    @IBAction func submtButton(_ sender: UIButton) {
+        if(fName.text == nil || fName.text!.isEmpty || lName.text == nil || lName.text!.isEmpty || country.text == nil || country.text!.isEmpty || age.text == nil || age.text!.isEmpty){
+            
+                    invisibleLabel.isHidden = false
+                    invisibleLabel.textColor = UIColor.red
+                    invisibleLabel.text = "Please enter all information"
+                }
+        else{
+                    invisibleLabel.isHidden = false
+                    invisibleLabel.textColor = UIColor.green
+                    invisibleLabel.text = "Submited successfully"
+                }
+        
+    }
 
+    @IBAction func clrButton(_ sender: UIButton) {
+        fName.text = ""
+        lName.text = ""
+        country.text = ""
+        age.text = ""
+        resultField.text = ""
+        invisibleLabel.isHidden = true
+        
+    }
+    
+    func displayData(){
+        resultField.text = "Full Name: \(fName.text!) \(lName.text!) \nCountry: \(country.text!) \nAge: \(age.text!)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        invisibleLabel.isHidden = true
         // Do any additional setup after loading the view.
     }
 

@@ -1,24 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIDA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©PriyamPatel [8930705]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szm-4j-tf9">
+                                <rect key="frame" x="141.33333333333334" y="808.66666666666663" width="110.33333333333334" height="9.3333333333333712"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="124" id="JYU-eL-R7J"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="tNd-xm-tpx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="9"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="uf6-2Z-Yfb">
+                                <rect key="frame" x="96.666666666666686" y="579.33333333333337" width="200" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ex-Wf-jIP">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="32.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="Abp-DO-oI8"/>
+                                            <constraint firstAttribute="width" constant="200" id="Odj-5b-5qX"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add">
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSk-ra-4kQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEQ-Ij-wFf">
+                                        <rect key="frame" x="0.0" y="46.333333333333258" width="200" height="32.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="C1y-lZ-Zfm"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="rq6-52-Hlo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Submit"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="submtButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jF-wK-niQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gj-pS-2rd">
+                                        <rect key="frame" x="0.0" y="92.666666666666629" width="200" height="32.333333333333343"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="1Wj-Sy-hR2"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="Ws2-5y-4wx"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="0.43590922370000001" blue="0.45529578910000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Clear">
+                                            <fontDescription key="titleFontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="clrButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMY-Uf-qwF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="PcK-AF-VC2"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="154.33000000000001" id="dD6-r6-kYz"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="hYG-AA-T5j">
+                                <rect key="frame" x="146.66666666666666" y="59" width="100" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="f20-Gh-obF"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="101" id="ork-es-mgN"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" axis="vertical" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="zkX-iq-4hM">
+                                <rect key="frame" x="21.666666666666657" y="202" width="350" height="338"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-PI-y43">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Ban-oa-UYM"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="kQN-UP-cEE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                                        <connections>
+                                            <action selector="fName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vvm-ah-qzY"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VSf-ru-rJs">
+                                        <rect key="frame" x="0.0" y="47" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="fxe-LL-FNx"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="k7D-CI-IXG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                        <connections>
+                                            <action selector="lName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Q9O-9y-jbO"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC3-EC-7Vk">
+                                        <rect key="frame" x="0.0" y="94" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Zw0-2f-Uq5"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ctl-yc-Nh2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" textContentType="country-name"/>
+                                        <connections>
+                                            <action selector="country:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MDm-xN-2zA"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sc0-AO-iOC">
+                                        <rect key="frame" x="0.0" y="141" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="WtF-Kr-Q99"/>
+                                            <constraint firstAttribute="width" constant="350" id="c77-HJ-ne1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="age:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="mfB-FI-VUg"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oun-wx-m9D">
+                                        <rect key="frame" x="0.0" y="188" width="350" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="7c8-cp-I29"/>
+                                            <constraint firstAttribute="width" constant="350" id="bYC-zB-5Eh"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="tTS-dI-84v"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="338" id="6Ma-nw-VTv"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="350" id="A5w-MJ-GDu"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invisible Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzQ-tK-42J">
+                                <rect key="frame" x="150.33333333333334" y="559" width="92.666666666666657" height="12.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="0Ca-Hn-Z4p"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="jEk-Qq-wFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85490196939999996" green="0.89019608500000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hYG-AA-T5j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CYC-wb-NGm"/>
+                            <constraint firstItem="TzQ-tK-42J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fth-Ca-CsD"/>
+                            <constraint firstItem="szm-4j-tf9" firstAttribute="top" relation="lessThanOrEqual" secondItem="uf6-2Z-Yfb" secondAttribute="bottom" constant="158.33000000000001" id="G40-oc-QAg"/>
+                            <constraint firstItem="szm-4j-tf9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HDA-R2-rb8"/>
+                            <constraint firstItem="hYG-AA-T5j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mvt-fk-e1h"/>
+                            <constraint firstItem="TzQ-tK-42J" firstAttribute="top" secondItem="zkX-iq-4hM" secondAttribute="bottom" constant="19" id="NAz-lK-Lks"/>
+                            <constraint firstItem="zkX-iq-4hM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ows-ic-wYV"/>
+                            <constraint firstItem="uf6-2Z-Yfb" firstAttribute="top" secondItem="TzQ-tK-42J" secondAttribute="bottom" constant="8" id="YAB-CM-U6R"/>
+                            <constraint firstItem="uf6-2Z-Yfb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gfk-KG-0b3"/>
+                            <constraint firstItem="szm-4j-tf9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rwV-ch-CvD"/>
+                            <constraint firstItem="zkX-iq-4hM" firstAttribute="top" secondItem="hYG-AA-T5j" secondAttribute="bottom" constant="42" id="ynu-9K-zWz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="age" destination="sc0-AO-iOC" id="vcD-1I-Mny"/>
+                        <outlet property="country" destination="bC3-EC-7Vk" id="ek0-jo-gtA"/>
+                        <outlet property="fName" destination="WS9-PI-y43" id="WTe-Nj-x90"/>
+                        <outlet property="invisibleLabel" destination="TzQ-tK-42J" id="iSl-o9-bWk"/>
+                        <outlet property="lName" destination="VSf-ru-rJs" id="7y9-iE-Idl"/>
+                        <outlet property="resultField" destination="oun-wx-m9D" id="QYn-C4-a07"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-29.577464788732396"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="200" height="200"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

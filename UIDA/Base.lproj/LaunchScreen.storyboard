@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,80 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="fPt-uG-APg">
+                                <rect key="frame" x="111" y="256" width="175" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="BTS-M5-Rg8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="173" id="PyI-CX-TW3"/>
+                                    <constraint firstAttribute="height" constant="173" id="fwh-1n-bcy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="175" id="oRB-gP-5hH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAB 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWa-Sl-qUL">
+                                <rect key="frame" x="166" y="561" width="61" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="0mM-cE-lPz"/>
+                                    <constraint firstAttribute="height" constant="21" id="c8Y-Dw-Zte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASSIGNMENT-2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gV7-Ni-MSO">
+                                <rect key="frame" x="131" y="590" width="131" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="rLL-Va-RMV"/>
+                                    <constraint firstAttribute="height" constant="18" id="x1q-ki-Q8m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USER INPUT DATA APPLICATION (UIDA)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiF-jd-h44">
+                                <rect key="frame" x="43" y="452" width="307" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="8nz-3L-Q3j"/>
+                                    <constraint firstAttribute="height" constant="21" id="beV-i3-GQZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="307" id="dbZ-cQ-5mO"/>
+                                    <constraint firstAttribute="width" constant="307" id="sXn-D3-mMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.85490196939999996" green="0.89019608500000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gV7-Ni-MSO" secondAttribute="bottom" constant="210" id="50c-LK-h7W"/>
+                            <constraint firstItem="FWa-Sl-qUL" firstAttribute="top" secondItem="QiF-jd-h44" secondAttribute="bottom" constant="88" id="5Wa-Yy-1Yg"/>
+                            <constraint firstItem="FWa-Sl-qUL" firstAttribute="top" secondItem="QiF-jd-h44" secondAttribute="bottom" constant="88" id="8cK-WF-4c6"/>
+                            <constraint firstItem="fPt-uG-APg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="8fM-fv-gqR"/>
+                            <constraint firstItem="FWa-Sl-qUL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="EKf-WN-e6h"/>
+                            <constraint firstItem="fPt-uG-APg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="EhX-fc-6W1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fPt-uG-APg" secondAttribute="trailing" constant="107" id="OfS-gZ-yeb"/>
+                            <constraint firstItem="QiF-jd-h44" firstAttribute="top" secondItem="fPt-uG-APg" secondAttribute="bottom" constant="23" id="QH4-M0-AM4"/>
+                            <constraint firstItem="QiF-jd-h44" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="XzK-Wh-BB4"/>
+                            <constraint firstItem="gV7-Ni-MSO" firstAttribute="top" secondItem="FWa-Sl-qUL" secondAttribute="bottom" constant="8" id="aJR-h4-nH0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QiF-jd-h44" secondAttribute="trailing" constant="43" id="cRX-cy-fBM"/>
+                            <constraint firstItem="QiF-jd-h44" firstAttribute="top" secondItem="fPt-uG-APg" secondAttribute="bottom" constant="23" id="fYq-VQ-524"/>
+                            <constraint firstItem="gV7-Ni-MSO" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jkd-cz-79a"/>
+                            <constraint firstItem="fPt-uG-APg" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pba-Iy-BgT"/>
+                            <constraint firstItem="gV7-Ni-MSO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="qHz-IV-3EQ"/>
+                            <constraint firstItem="QiF-jd-h44" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sWI-8A-r6T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gV7-Ni-MSO" secondAttribute="trailing" constant="131" id="uH4-lK-jWs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="200" height="200"/>
+    </resources>
 </document>
