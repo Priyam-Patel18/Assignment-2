@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             
                     invisibleLabel.isHidden = false
                     invisibleLabel.textColor = UIColor.red
-                    invisibleLabel.text = "Please enter information first!"
+                    invisibleLabel.text = "Please Enter All Information First!"
                 }
         else{
                     displayData()
@@ -47,12 +47,12 @@ class ViewController: UIViewController {
             
                     invisibleLabel.isHidden = false
                     invisibleLabel.textColor = UIColor.red
-                    invisibleLabel.text = "Please enter all information"
+                    invisibleLabel.text = "Please Complete The Missing Info!"
                 }
         else{
                     invisibleLabel.isHidden = false
                     invisibleLabel.textColor = UIColor.green
-                    invisibleLabel.text = "Submited successfully"
+                    invisibleLabel.text = "Submited Successfully"
                 }
         
     }
